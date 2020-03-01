@@ -1,0 +1,35 @@
+namespace Jsml.Enums
+{
+    enum Tags
+    {
+        A,
+        Body,
+        Br,
+        Canvas,
+        Div,
+        H1,
+        H2,
+        H3,
+        H4,
+        H5,
+        Head,
+        Hr,
+        Html,
+        Iframe,
+        Img,
+        Input,
+        Li,
+        Option,
+        Script,
+        Span,
+        Style,
+        Table,
+        Tbody,
+        Td,
+        Tfoot,
+        Th,
+        Thead,
+        Tr,
+        Ul
+    }
+}
