@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Jsml.ProtocolBuffers;
+
+message Element
+{
+  message ElementAttribute {
+    string key = 1;
+    string value = 2;
+  }
+
+  repeated ElementAttribute attributes = 1;
+  repeated Element children = 2;
+  string tag = 3;
+  string text = 4;
+}

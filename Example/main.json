@@ -1,0 +1,59 @@
+{
+  "tag": "html",
+  "children": [
+    {
+      "tag": "head",
+      "children": [
+        {
+          "tag": "meta",
+          "attributes": {
+            "content": "text/html;charset=utf-8",
+            "http-equiv": "Content-Type"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "content": "utf-8",
+            "http-equiv": "encoding"
+          }
+        },
+        {
+          "tag": "script",
+          "attributes": {
+            "src": "require.min.js"
+          }
+        },
+        {
+          "tag": "script",
+          "attributes": {
+            "src": "main.js"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "body",
+      "children": [
+        {
+          "tag": "div",
+          "children": [
+            {
+              "tag": "span",
+              "attributes": {
+                "id": "title"
+              },
+              "text": "Default Title"
+            },
+            {
+              "tag": "input",
+              "attributes": {
+                "id": "custom-title"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

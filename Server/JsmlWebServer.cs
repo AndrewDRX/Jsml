@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.FileProviders;
 
 using System.Net.WebSockets;
 
@@ -50,15 +51,17 @@ namespace Jsml.Server
                             await next();
                         }
                     });
+                    app.UseStaticFiles(new StaticFileOptions {
+                        FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Example")),
+                        RequestPath = ""
+                    });
                     app.UseFileServer();
-                    /*
                     app.Run(handler: async context => {
                         context.Response.ContentType = "text/html";
                         await context.Response.WriteAsync(
                             text: root.Dom.ToString()
                         );
                     });
-                    */
                 })
                 .Build();
     }

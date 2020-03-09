@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "sourceMap": false,
+    "target": "es6",
+    "lib": ["dom", "es6"]
+  },
+  "files": ["**/*.ts"],
+  "compileOnSave": true
+}
